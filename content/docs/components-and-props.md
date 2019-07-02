@@ -161,11 +161,11 @@ function Comment(props) {
 Для начала извлечём `Avatar`:
 
 ```js{3-6}
-function Avatar(props) {
+function Avatar(user) {
   return (
     <img className="Avatar"
-      src={props.user.avatarUrl}
-      alt={props.user.name}
+      src={user.avatarUrl}
+      alt={user.name}
     />
   );
 }
